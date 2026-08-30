@@ -712,13 +712,13 @@ source venv/bin/activate
 ```
 ## 4. Instalar as dependências
 
-*O projeto possui um arquivo de dependências.
+* O projeto possui um arquivo de dependências.
 
-*Atualmente ele está nomeado como:
+* Atualmente ele está nomeado como:
 ```
 requirements.tx
 ```
-*Para instalar:
+* Para instalar:
 ```
 pip install -r requirements.tx
 ```
