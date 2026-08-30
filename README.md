@@ -776,11 +776,11 @@ para localizar modelos que contenham o texto informado.
 
 ## 🧠 Conceitos de Django estudados
 
-*Este projeto foi desenvolvido principalmente para consolidar os seguintes conceitos:
+* Este projeto foi desenvolvido principalmente para consolidar os seguintes conceitos:
 
 # Django Project
 
-*Estrutura principal responsável pelas configurações da aplicação.
+* Estrutura principal responsável pelas configurações da aplicação.
 ```
 app/
 Django App
