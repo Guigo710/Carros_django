@@ -53,15 +53,15 @@ A aplicação deverá evoluir para possuir funcionalidades como:
 ```
 A implementação está sendo realizada de forma incremental, utilizando cada funcionalidade como oportunidade para estudar um conceito diferente do Django.
 
-#🛠️ Tecnologias utilizadas
-*Python
-*Django
-*SQLite
-*HTML5
-*CSS3
-*Pillow — utilizada para trabalhar com imagens
-*Django ORM
-*Django Admin
+# 🛠️ Tecnologias utilizadas
+* Python
+* Django
+* SQLite
+* HTML5
+* CSS3
+* Pillow — utilizada para trabalhar com imagens
+* Django ORM
+* Django Admin
 
 - O projeto também possui algumas dependências registradas no arquivo de requirements, incluindo Django, Pillow, Requests e OpenPyXL.
 
