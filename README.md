@@ -702,11 +702,11 @@ python -m venv venv
 ```
 ## 3. Ativar o ambiente virtual
 
-*No Windows:
+* No Windows:
 ```
 venv\Scripts\activate
 ```
-*No Linux/macOS:
+* No Linux/macOS:
 ```
 source venv/bin/activate
 ```
