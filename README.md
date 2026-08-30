@@ -535,29 +535,29 @@ Portanto, o cadastro ainda não está conectado ao banco de dados.
 
 # 📊 Status atual do projeto
 ## ✅ Já implementado
- *Criação do projeto Django
- *Criação da aplicação cars
- *Configuração do SQLite
- *Model Brand
- *Model Car
- *Relacionamento entre Car e Brand
- *Migrations
- *Django Admin
- *Cadastro de marcas pelo Admin
- *Cadastro de carros pelo Admin
- *Configuração de upload de imagens
- *Configuração de MEDIA_ROOT
- *Configuração de MEDIA_URL
- *Template base
- *Template de listagem
- *Listagem de carros
- *Ordenação por modelo
- *Pesquisa de carros
- *Estrutura inicial do formulário
- *Rota para cadastro de carro
- *Template inicial para cadastro
+ * Criação do projeto Django
+ * Criação da aplicação cars
+ * Configuração do SQLite
+ * Model Brand
+ * Model Car
+ * Relacionamento entre Car e Brand
+ * Migrations
+ * Django Admin
+ * Cadastro de marcas pelo Admin
+ * Cadastro de carros pelo Admin
+ * Configuração de upload de imagens
+ * Configuração de MEDIA_ROOT
+ * Configuração de MEDIA_URL
+ * Template base
+ * Template de listagem
+ * Listagem de carros
+ * Ordenação por modelo
+ * Pesquisa de carros
+ * Estrutura inicial do formulário
+ * Rota para cadastro de carro
+ * Template inicial para cadastro
 ## 🚧 Em desenvolvimento
-*1. Finalizar cadastro de carros
+* 1. Finalizar cadastro de carros
 
 - A principal próxima etapa é conectar:
 ```
@@ -575,29 +575,29 @@ SQLite
 ```
 A view deverá:
 
-*Receber a requisição;
-*Verificar se é POST;
-*Receber os dados enviados;
-*Validar o formulário;
-*Criar o objeto Car;
-*Salvar no banco;
-*Redirecionar para a lista de carros.
+* Receber a requisição;
+* Verificar se é POST;
+* Receber os dados enviados;
+* Validar o formulário;
+* Criar o objeto Car;
+* Salvar no banco;
+* Redirecionar para a lista de carros.
 ## 2. Completar o CarForm
 
 O formulário atualmente possui apenas:
 
-*model
-*brand
+* model
+* brand
 
 Ainda é necessário adicionar campos como:
 
-*model
-*brand
-*factory_year
-*model_year
-*plate
-*value
-*photo
+* model
+* brand
+* factory_year
+* model_year
+* plate
+* value
+* photo
 
 Dessa maneira, o formulário poderá representar todos os dados existentes no model Car.
 
@@ -652,12 +652,12 @@ Listagem
 /cars/
 Edição
 ```
-*Exemplo de futura rota:
+* Exemplo de futura rota:
 ```
 /cars/<id>/edit/
 Exclusão
 ```
-*Exemplo de futura rota:
+* Exemplo de futura rota:
 ```
 /cars/<id>/delete/
 ```
@@ -666,7 +666,7 @@ Exclusão
 Após finalizar o CRUD, algumas funcionalidades podem ser adicionadas:
 
 * Página individual de cada veículo
- *Editar carros
+* Editar carros
 * Excluir carros
 * Confirmação antes de excluir
 * Pesquisa por marca
@@ -743,30 +743,30 @@ http://127.0.0.1:8000/
 ```
 # 🌐 Acessando a aplicação
 
-*Lista de carros
+Lista de carros
 ```
 http://127.0.0.1:8000/cars/
 ```
-*Cadastro
+ Cadastro
 ```
 http://127.0.0.1:8000/new_car/
 ```
-*Django Admin
+ Django Admin
 ```
 http://127.0.0.1:8000/admin/
 ```
 # 🧪 Testando a busca
 
-*Depois de cadastrar alguns carros pelo Django Admin, acesse:
+* Depois de cadastrar alguns carros pelo Django Admin, acesse:
 ```
 http://127.0.0.1:8000/cars/
 ```
 Utilize o campo de busca.
 
 Por exemplo:
-
+```
 BMW
-
+```
 A aplicação utilizará:
 ```
 model__icontains
@@ -796,50 +796,50 @@ Brand
 Car
 ORM
 ```
-*Interação com o banco de dados através de Python:
+* Interação com o banco de dados através de Python:
 ```
 Car.objects.all()
 QuerySet
 ```
-*Consulta e manipulação dos dados:
+* Consulta e manipulação dos dados:
 ```
 Car.objects.all().order_by('model')
 Filters
 ```
-*Pesquisa utilizando o ORM:
+* Pesquisa utilizando o ORM:
 ```
 cars.filter(model__icontains=search)
 Views
 ```
-*Responsáveis pela lógica das requisições:
+* Responsáveis pela lógica das requisições:
 ```
 def cars_view(request):
 Templates
 ```
-*Responsáveis pela apresentação dos dados:
+* Responsáveis pela apresentação dos dados:
 ```
 {% for car in cars %}
 Forms
 ```
-*Responsáveis pela criação e validação de formulários:
+* Responsáveis pela criação e validação de formulários:
 ```
 class CarForm(forms.Form):
 URLs
 ```
-*Responsáveis pelo direcionamento das requisições:
+* Responsáveis pelo direcionamento das requisições:
 ```
 path('cars/', cars_view, name='cars_list')
 Admin
 ```
-*Interface administrativa fornecida pelo Django.
+* Interface administrativa fornecida pelo Django.
 ```
 Migrations
 ```
-*Controle das alterações realizadas na estrutura do banco.
+* Controle das alterações realizadas na estrutura do banco.
 ```
 Media
 ```
-*Gerenciamento de arquivos enviados pelo usuário, como imagens.
+* Gerenciamento de arquivos enviados pelo usuário, como imagens.
 
 ## 🔄 Arquitetura atual
 
@@ -928,19 +928,19 @@ A evolução do projeto está sendo feita em etapas:
 
 ## 🚧 Projeto em desenvolvimento
 
-*Este repositório representa o estado atual dos meus estudos em Django.
+* Este repositório representa o estado atual dos meus estudos em Django.
 
-*A aplicação ainda não deve ser considerada um sistema completo de loja de veículos. Algumas funcionalidades já estão implementadas e funcionais, enquanto outras estão sendo desenvolvidas como parte do processo de aprendizado.
+* A aplicação ainda não deve ser considerada um sistema completo de loja de veículos. Algumas funcionalidades já estão implementadas e funcionais, enquanto outras estão sendo desenvolvidas como parte do processo de aprendizado.
 
-*O objetivo é continuar evoluindo o projeto conforme novos conceitos de Django forem estudados.
+* O objetivo é continuar evoluindo o projeto conforme novos conceitos de Django forem estudados.
 
 # 🔐 Observação sobre configuração
 
-*O arquivo settings.py atualmente possui DEBUG = True e uma SECRET_KEY diretamente no código.
+* O arquivo settings.py atualmente possui DEBUG = True e uma SECRET_KEY diretamente no código.
 
-*Essa configuração é adequada para um ambiente local de estudos, mas não deve ser utilizada dessa forma em produção.
+* Essa configuração é adequada para um ambiente local de estudos, mas não deve ser utilizada dessa forma em produção.
 
-*Em uma futura versão, a ideia é utilizar variáveis de ambiente para informações sensíveis, por exemplo:
+* Em uma futura versão, a ideia é utilizar variáveis de ambiente para informações sensíveis, por exemplo:
 ```
 SECRET_KEY
 DEBUG
@@ -950,8 +950,8 @@ DATABASE_URL
 
 # 📚 Objetivo de aprendizado
 
-*Este projeto faz parte dos meus estudos de desenvolvimento Back-end com Python e Django.
+* Este projeto faz parte dos meus estudos de desenvolvimento Back-end com Python e Django.
 
-*A proposta não é apenas construir uma aplicação de loja de carros, mas utilizar o projeto como uma forma prática de compreender como uma aplicação web é estruturada utilizando Django.
+* A proposta não é apenas construir uma aplicação de loja de carros, mas utilizar o projeto como uma forma prática de compreender como uma aplicação web é estruturada utilizando Django.
 
-*Cada funcionalidade representa uma etapa de aprendizado, desde a criação dos models e banco de dados até a construção de um CRUD completo.
+* Cada funcionalidade representa uma etapa de aprendizado, desde a criação dos models e banco de dados até a construção de um CRUD completo.
