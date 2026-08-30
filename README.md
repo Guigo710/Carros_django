@@ -1,6 +1,6 @@
 # 🚗 Carros Django
 
-> Projeto de estudo prático desenvolvido com Django para simular uma aplicação web de uma loja de carros.
+* Projeto de estudo prático desenvolvido com Django para simular uma aplicação web de uma loja de carros.
 
 ## 📌 Sobre o projeto
 
